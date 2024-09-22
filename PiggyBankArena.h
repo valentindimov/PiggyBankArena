@@ -28,8 +28,8 @@ For more information, please refer to <http://unlicense.org/>
 // PiggyBankArena: Arena where you can allocate memory as normal, but have to free it all at once.
 // It also supports adding cleanup actions (e.g. releasing locks or file handles) and performing them when the arena is freed.
 
-#ifndef TEMP_ARENA_H
-#define TEMP_ARENA_H
+#ifndef PIGGYBACK_ARENA_H
+#define PIGGYBACK_ARENA_H
 
 #ifndef NULL
 #define NULL ((void*)0)
@@ -132,4 +132,4 @@ template <typename T> T* PiggyBankArenaAllocObject(PiggyBankArena* arena, bool c
 }
 #endif // __cplusplus
 
-#endif // TEMP_ARENA_H
+#endif // PIGGYBACK_ARENA_H
